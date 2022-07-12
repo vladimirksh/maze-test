@@ -1,0 +1,307 @@
+@charset "UTF-8";
+@import url(../vendor/normalize.css);
+@import url(../vendor/Root/styles.css);
+body {
+  background-color: rgb(242, 242, 242);
+  font-family: "PT-Root-UI", "Arial", sans-serif;
+}
+body .page {
+  max-width: 1743px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+body .page .header__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 44px;
+  color: #333333;
+  margin: 0;
+  padding: 48px 0px 19px 43px;
+}
+body .page .order {
+  background-color: #ffffff;
+  display: flex;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+}
+body .page .order__discription {
+  max-width: 1117px;
+  padding: 40px 82px 51px 43px;
+}
+body .page .order__delivery {
+  width: 992px;
+}
+body .page .order__delivery-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .page .order__delivery-btn {
+  margin-bottom: 30px;
+  border: 0;
+  padding: 0;
+  background: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #065cc2;
+}
+body .page .order__slider {
+  margin: 17px 0 14px;
+  overflow: hidden;
+  position: relative;
+}
+body .page .order__slider-track {
+  display: flex;
+  transition: 1s;
+}
+body .page .order__slider-item {
+  box-sizing: border-box;
+  height: 152px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+body .page .order__slider-item_active {
+  border: 1px solid rgb(6, 92, 194);
+}
+body .page .order__slider-item:nth-child(even) {
+  padding-top: 34px;
+}
+body .page .order__slider-item:nth-child(even) p {
+  padding-top: 28px;
+}
+body .page .order__slider-item:nth-child(even) div p {
+  padding: 0;
+}
+body .page .order__slider-item:last-of-type {
+  padding-right: 0px;
+}
+body .page .order__slider-item h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.13px;
+  color: #333333;
+  margin: 0;
+}
+body .page .order__slider-item p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #1a1a1a;
+  padding-top: 42px;
+}
+body .page .order__slider-item div p {
+  width: 360px;
+  padding: 0;
+}
+body .page .order__button {
+  border: 0;
+  padding: 0;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  color: #333333;
+  font-family: "PT-Root-UI", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29px;
+  cursor: pointer;
+}
+body .page .order__button_inactive {
+  border: 0;
+  padding: 0;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  color: #333333;
+  font-family: "PT-Root-UI", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29px;
+  pointer-events: none;
+  opacity: 0.25;
+}
+body .page .order__date-change {
+  display: flex;
+  align-items: center;
+}
+body .page .order__date-change button {
+  border: 0;
+  padding: 0;
+  background: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #065cc2;
+  cursor: pointer;
+  width: 209px;
+  height: 28px;
+}
+body .page .order__date-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body .page .order__date-list li {
+  box-sizing: border-box;
+  width: 272px;
+  height: 96px;
+  padding: 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .page .order__date-list li:last-of-type {
+  margin: 0 30px 0 14px;
+}
+body .page .order__date-list li p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #333333;
+}
+body .page .order__date-list li p:last-of-type {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.13px;
+}
+body .page .order__date-additionally {
+  display: flex;
+  margin: 14px 0 30px 0;
+}
+body .page .order__date-additionally ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body .page .order__date-additionally ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+body .page .order__date-additionally ul li:last-of-type {
+  margin-bottom: 0;
+}
+body .page .order__price {
+  width: 625px;
+  box-sizing: border-box;
+  padding: 40px 50px;
+  border-left: 1px solid rgb(140, 140, 140);
+}
+body .page .order__price-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  max-width: 489px;
+  list-style: none;
+  border-bottom: 1px solid #d6d6d6;
+}
+body .page .order__price-list li {
+  display: flex;
+  justify-content: space-between;
+  font-family: "PT-Root-UI", "Arial", sans-serif;
+}
+body .page .order__price-list li:nth-child(even) {
+  margin: 14px 0;
+}
+body .page .order__price-list li:last-of-type {
+  margin-bottom: 20px;
+}
+body .page .order__price-list li p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #333333;
+  margin: 0;
+}
+body .page .order__price-list li p:last-of-type {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: right;
+}
+body .page .order__title {
+  font-family: "PT-Root-UI", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 37px;
+  color: #333333;
+  margin: 0;
+}
+body .page .order__title span {
+  font-weight: 400;
+}
+body .page .order__checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 34px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+body .page .order__checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+body .page .order__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: rgba(6, 92, 194, 0.3);
+}
+body .page .order__checkbox-container:hover input ~ .order__checkmark {
+  background-color: #ccc;
+}
+body .page .order__checkbox-container input:checked ~ .order__checkmark {
+  background-color: rgb(6, 92, 194);
+}
+body .page .order__checkmark:after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  left: 3px;
+  display: none;
+}
+body .page .order__checkbox-container input:checked ~ .order__checkmark:after {
+  display: block;
+}
+body .page .order__checkbox-container body .page .order__checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=index.css.map */

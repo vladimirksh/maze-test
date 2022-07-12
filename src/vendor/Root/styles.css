@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "PT-Root-UI";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./PT-Root-UI-Regular.eot);
+  src: url(./PT-Root-UI-Regular.eot?#iefix) format("embedded-opentype"),
+    url(./PT-Root-UI-Regular.otf) format("otf"),
+    url(./PT-Root-UI-Regular.woff) format("woff"),
+    url(./PT-Root-UI-Regular.woff2) format("woff2"),
+    url(./PT-Root-UI-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PT-Root-UI";
+  font-style: normal;
+  font-weight: 700;
+  src: url(./PT-Root-UI-Bold.eot);
+  src: url(./PT-Root-UI-Bold.eot?#iefix) format("embedded-opentype"),
+    url(./PT-Root-UI-Bold.otf) format("otf"),
+    url(./PT-Root-UI-Bold.ttf) format("truetype"),
+    url(./PT-Root-UI-Bold.woff) format("woff"),
+    url(./PT-Root-UI-Bold.woff2) format("woff2");
+}
