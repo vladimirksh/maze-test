@@ -1,4 +1,17 @@
 import "./index.css";
+
+const popup = document.querySelector(".popup");
+const btnPopupOpen = document.querySelector(".footer__prise-button");
+const btnPopupClose = document.querySelector(".popup__button");
+
+btnPopupOpen.addEventListener("click", () => {
+  popup.classList.add("popup__open");
+});
+
+btnPopupClose.addEventListener("click", () => {
+  popup.classList.remove("popup__open");
+});
+
 //скрол
 const conteiner = document.querySelector(".order__slider"); //окно просмотра слайдов
 const track = document.querySelector(".order__slider-track"); //линейка со слайдами
@@ -9,14 +22,16 @@ const next = document.querySelector(".order__button-next");
 
 let itemId;
 let clickScore = 0;
-let position = 0; //это значение будем переопределять когда будем скролить
-const slidesToShow = 2; //показываем желаемое кол-во элементов
-const slidesToScroll = 1; //кол-во элементов которые будем скролить
+let position = 0;
+const slidesToShow = window.innerWidth === 360 ? 1 : 2;
+const slidesToScroll = 1;
 
-const itemWidth = conteiner.offsetWidth / slidesToShow; //просчитываем размеры для каждого айтема в треке
-const itemsCount = items.length; //получаем кол-во наших элементов
+const itemWidth = conteiner.offsetWidth /*992*/ / slidesToShow;
+//просчитываем размеры для каждого айтема в треке
+//conteiner.offsetWidth и conteiner.clientWidth- периодически выдает другую ширину отличающееся от фактической захардкодил 992
+const itemsCount = items.length;
 
-const movePosition = slidesToScroll * itemWidth; //переменная для скрола трека
+const movePosition = slidesToScroll * itemWidth;
 
 //функция изменения позиции
 function setPosition() {

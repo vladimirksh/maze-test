@@ -115,6 +115,32 @@
               </ul>
             </div>
           </div>
+
+          <div class="order__addressee">
+            <h4 class="order__addressee-title">Получатель</h4>
+
+            <div class="order__addressee-info">
+              <label for="name">Имя и фамилия</label>
+              <select name="name" id="name">
+                <option value="1">
+                  Вольфганг Вениаминович Константинопольский
+                </option>
+                <option value="2">Иванов Иван Иванович</option>
+                <option value="3">Петров Пётр Петрович</option>
+              </select>
+            </div>
+            <button>Новый получатель</button>
+
+            <div class="order__addressee-info">
+              <label for="number">Контактный телефон</label>
+              <select name="number" id="number">
+                <option value="1">+7 910 234-56-78</option>
+                <option value="2">+7 800 555-35-35</option>
+                <option value="3">+7 910 234-56-78</option>
+              </select>
+            </div>
+            <button>Новый телефон</button>
+          </div>
         </section>
 
         <section class="order__price">
@@ -137,8 +163,39 @@
       </main>
 
       <footer class="footer">
-        <p></p>
+        <button class="footer__button">Оформить и оплатить</button>
+        <div class="footer__total">
+          <p class="footer__text">Итого к оплате на сайте:</p>
+          <p class="footer__prise">21 072 ₽</p>
+        </div>
+        <div class="footer__total-mobile">
+          <p class="footer__text">К оплате: 21 072 ₽</p>
+          <button class="footer__prise-button">Подробнее</button>
+        </div>
       </footer>
+    </div>
+
+    <div class="popup">
+      <div class="popup__summary">
+        <h4 class="popup__title">В заказе 5 товаров <span>(2 кг)</span></h4>
+        <ul class="popup__list">
+          <li>
+            <p>Цена товаров</p>
+            <p>29 456 ₽</p>
+          </li>
+          <li>
+            <p>Все скидки</p>
+            <p>–7 732 ₽</p>
+          </li>
+          <li>
+            <p>К оплате:</p>
+            <p>21 072 ₽</p>
+          </li>
+        </ul>
+      </div>
+      <div class="popup__hide">
+        <button class="popup__button">Закрыть подробности</button>
+      </div>
     </div>
   </body>
 </html>
